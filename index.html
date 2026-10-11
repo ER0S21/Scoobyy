@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1c1018" />
+  <meta name="description" content="A little something made just for you." />
+  <title>A Little Something for You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Allura&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <main class="site-shell">
+    <header class="topbar">
+      <span class="eyebrow"><span class="tiny-star">✦</span> A LITTLE SOMETHING FOR YOU</span>
+      <span class="top-heart" aria-hidden="true">♡</span>
+    </header>
+
+    <section class="screen active" id="question-screen" aria-live="polite">
+      <div class="progress-wrap">
+        <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+        <span id="progress-label">SCENE 01 / 05</span>
+      </div>
+
+      <div class="question-layout">
+        <div class="question-copy">
+          <p class="kicker" id="scene-kicker">THE BEGINNING</p>
+          <h1 id="question-title">Hey, you.</h1>
+          <p class="question-subtitle" id="question-subtitle">I made a little something for you.</p>
+          <p class="question-text" id="question-text">Got a minute for me?</p>
+
+          <div class="button-row">
+            <button class="button button-yes" id="yes-button" type="button">Yes, okay <span>♡</span></button>
+            <button class="button button-no" id="no-button" type="button">No <span>🙄</span></button>
+          </div>
+          <p class="reaction" id="reaction" role="status">No pressure — just a tiny surprise if you're curious.</p>
+        </div>
+
+        <div class="hero-art">
+          <div class="photo-frame hero-frame">
+            <img src="media/her.jpeg"Replace this with a favourite photo" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder-frame')">
+            <div class="image-placeholder">
+              <span class="placeholder-icon">✿</span>
+              <span>Your favourite photo goes here</span>
+              <small>her.jpg</small>
+            </div>
+          </div>
+          <span class="scribble scribble-top">a little plot twist</span>
+          <span class="scribble scribble-bottom">made with care ♡</span>
+        </div>
+      </div>
+      <p class="bottom-note">MADE WITH A LITTLE THOUGHT BEHIND IT <span>✦</span></p>
+    </section>
+
+    <section class="screen reveal-screen" id="reveal-screen" hidden>
+      <div class="reveal-header">
+        <p class="kicker">THE LITTLE THINGS</p>
+        <h2>A little world of <em>you.</em></h2>
+        <p class="reveal-intro">A few things that made me think of you — your creativity, your favourite little obsessions, and the moments worth keeping.</p>
+      </div>
+
+      <div class="memory-grid">
+        <article class="memory-card memory-large">
+          <div class="media-box">
+            <img src="media/photo-1.jpeg" alt="A favourite photo" onerror="this.style.display='none'; this.parentElement.classList.add('media-placeholder')">
+            <span class="media-fallback">YOUR PHOTO HERE<br><small>media/photo-1.jpg</small></span>
+          </div>
+          <div class="memory-caption"><span>01 / THE CREATIVE ONE</span><h3>Made with her own kind of magic.</h3><p>For the makeup looks, the little details, and the things you create.</p></div>
+        </article>
+        <article class="memory-card">
+          <div class="media-box">
+            <img src="media/photo-2.jpeg" alt="A favourite candid photo" onerror="this.style.display='none'; this.parentElement.classList.add('media-placeholder')">
+            <span class="media-fallback">YOUR PHOTO HERE<br><small>media/photo-2.jpg</small></span>
+          </div>
+          <div class="memory-caption"><span>02 / THE EVERYDAY MAGIC</span><h3>Just being you.</h3><p>Some moments don't need a reason to be remembered.</p></div>
+        </article>
+        <article class="memory-card">
+          <div class="media-box">
+            <img src="media/photo-3.jpeg" alt="A favourite memory" onerror="this.style.display='none'; this.parentElement.classList.add('media-placeholder')">
+            <span class="media-fallback">YOUR PHOTO HERE<br><small>media/photo-3.jpg</small></span>
+          </div>
+          <div class="memory-caption"><span>03 / THE LITTLE OBSESSIONS</span><h3>Coffee ice cream. Obviously.</h3><p>Baskin-Robbins might as well save you a seat.</p></div>
+        </article>
+      </div>
+
+      <div class="video-feature">
+        <div class="video-copy">
+          <p class="kicker">A MOMENT ON REPEAT</p>
+          <h3>Some things just feel like <em>Barsaat.</em></h3>
+          <p>Your current fav song deserves its own little corner.</p>
+
+        </div>
+        <div class="video-box">
+          <video controls playsinline preload="metadata" poster="media/video-poster.jpg">
+            <source src="media/Barsaat.mp4" type="video/mp4">
+            Your browser does not support the video element.
+          </video>
+        </div>
+      </div>
+
+      <div class="letter-card">
+        <span class="letter-flower">✿</span>
+        <p class="kicker">THE LAST SCENE</p>
+        <h2>A little something I wanted you to know.</h2>
+        <div class="letter-body">
+          <p>I don't know if I say this enough, but there's something about you that stands out to me.</p>
+          <p>Maybe it's the way you throw yourself into the things you love, your creative side, or simply the way you make ordinary moments feel a little less ordinary.</p>
+          <p>I notice more little things about you than you probably realise. Your favourite song, your coffee ice cream obsession, the things you create, and all those little details that make you <em>you.</em></p>
+          <p>I made this because I wanted to give you something a little different. No special occasion, no big explanation. Just something made with you in mind.</p>
+          <p class="final-line">And maybe, just maybe, you're a little more special to me than you think. ♡</p>
+        </div>
+        <p class="signature">— From me, with a little thought behind it.</p>
+      </div>
+
+      <button class="replay-button" id="replay-button" type="button">↺ Replay the questions</button>
+      <p class="bottom-note">END OF THE LITTLE SURPRISE <span>✦</span></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
